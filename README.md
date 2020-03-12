@@ -2,6 +2,16 @@
 
 Base on Heroku's "node-js-gettings-started" example. Please refer to the original article for instructions on how to install Heroku, nodejs etc: [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 
+# API token and secrets
+The API token and secret are read from .env file
+It should look like this. You can obtain them in Twitter developer app portal
+```
+API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxx
+API_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxx
+USER_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxx
+USER_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
 ## Running Locally
 
 ```sh
@@ -22,4 +32,3 @@ $ heroku create
 $ git push heroku master
 $ heroku open
 ```
-## Documentation
