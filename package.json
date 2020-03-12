@@ -1,0 +1,31 @@
+{
+  "name": "twitter-stream-heroku",
+  "version": "0.0.1",
+  "description": "An example of how to user stream API to monitor tweets with a specific hashtag",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "open": "^7.0.3",
+    "sqlite3": "^4.1.1",
+    "twitter-lite": "^0.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quietcricket/twitter-stream-heroku"
+  },
+  "keywords": [
+    "twitter",
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "APACHE 2.0"
+}

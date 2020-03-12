@@ -1,0 +1,12 @@
+{
+  "name": "Twitter Stream API Example",
+  "description": "An example of how to user stream API to monitor tweets with a specific hashtag",
+  "repository": "https://github.com/quietcricket/twitter-stream-heroku",
+  "keywords": [
+    "node",
+    "express",
+    "heroku",
+    "twitter"
+  ],
+  "image": "heroku/nodejs"
+}
