@@ -10,7 +10,6 @@ const rl = readline.createInterface({
 
 function get_access_token(resp) {
     rl.question("Please enter the 7 digits code from Twitter: ", code => {
-        console.log(resp);
         let client = new Twitter({
             consumer_key: process.env.API_KEY,
             consumer_secret: process.env.API_SECRET,
@@ -20,7 +19,6 @@ function get_access_token(resp) {
             secret: resp.oauth_token_secret,
             verifier: code.trim()
         }).then(r => {
-            console.log(r);
             console.log("Access token generated successfully from @" + r.screen_name);
             console.log("ACCESS_TOKEN: " + r.oauth_token);
             console.log("ACCESS_TOKEN_SECRET: " + r.oauth_token_secret);
@@ -43,6 +41,4 @@ async function get_request_token() {
     open(url);
     get_access_token(resp);
 }
-
-
 get_request_token();
