@@ -13,12 +13,13 @@ $ npm start
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-## Deploying to Heroku
+## Notice 
+Heroku doesn't persist files. When you re-deploy, `tweets.sqlite' will be lost.
 
+## Deploying to Heroku
 ```
 $ heroku create
 $ git push heroku master
 $ heroku open
 ```
-
 ## Documentation
