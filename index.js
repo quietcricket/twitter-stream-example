@@ -1,4 +1,4 @@
-// if (!process.env.API_KEY) require('dotenv').config();
+if (!process.env.API_KEY) require('dotenv').config();
 const express = require('express')
 const Twitter = require('twitter-lite')
 const sqlite3 = require('sqlite3');
