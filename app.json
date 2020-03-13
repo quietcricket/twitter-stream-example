@@ -1,12 +1,15 @@
 {
   "name": "Twitter Stream API Example",
   "description": "An example of how to user stream API to monitor tweets with a specific hashtag",
-  "repository": "https://github.com/quietcricket/twitter-stream-heroku",
+  "repository": "https://github.com/quietcricket/twitter-stream-example",
   "keywords": [
     "node",
     "express",
-    "heroku",
+    "stream",
     "twitter"
   ],
-  "image": "heroku/nodejs"
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  }
 }

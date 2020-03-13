@@ -1,6 +1,9 @@
-# Twitter Stream API Example using Heroku
-
+# Twitter Stream API Example 
 Base on Heroku's "node-js-gettings-started" example. Please refer to the original article for instructions on how to install Heroku, nodejs etc: [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+
+## UPDATE
+It's a bad idea to user Heroku. There is no persistant storage. Every new deployment will lose the database.
+Ended up using AWS lightsail
 
 # API token and secrets
 The API token and secret are read from .env file
@@ -15,20 +18,10 @@ USER_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxx
 ## Running Locally
 
 ```sh
-$ git clone https://github.com/quietcricket/twitter-stream-heroku
-$ cd twitter-stream-heroku
+$ git clone https://github.com/quietcricket/twitter-stream-example
+$ cd twitter-stream-example
 $ npm install
-$ npm start
+$ npm run start
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Notice 
-Heroku doesn't persist files. When you re-deploy, `tweets.sqlite' will be lost.
-
-## Deploying to Heroku
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+Your app should now be running on [localhost:3000](http://localhost:3000/).

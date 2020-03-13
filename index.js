@@ -42,7 +42,7 @@ try {
     console.error(err)
 }
 
-express()
+app = express()
     .get('/', (req, res) => {
         db.serialize(() => {
             db.get('select COUNT(id) as total from tweet', (err, row) => {
@@ -51,4 +51,4 @@ express()
             });
         });
     })
-    .listen(process.env.PORT || 5000, () => console.log('Server started'));
+module.exports = app;
