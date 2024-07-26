@@ -10,12 +10,12 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "ejs": "^2.5.6",
-    "express": "^4.15.2",
-    "open": "^7.0.3",
-    "sqlite3": "^4.1.1",
-    "twitter-lite": "^0.9.4"
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "open": "^10.1.0",
+    "sqlite3": "^5.1.7",
+    "twitter-lite": "^1.1.0"
   },
   "repository": {
     "type": "git",
